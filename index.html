@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LX Studio | Fine-Art Wedding Photography & Films, Delhi NCR</title>
+  <meta name="description" content="Fine-art wedding photography and cinematic films by Aakash. Based in Delhi NCR, available for destination weddings worldwide.">
+  <meta name="theme-color" content="#1C352D">
+  <link rel="canonical" href="https://kiransaini0910.github.io/LX-STUDIO/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231C352D'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23F8F0E5' font-family='serif'%3ELX%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LX Studio | Fine-Art Wedding Photography & Films">
+  <meta property="og:description" content="Fine-art wedding photography and cinematic films by Aakash. Delhi NCR and destination weddings worldwide.">
+  <meta property="og:url" content="https://kiransaini0910.github.io/LX-STUDIO/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Photographer",
+    "name": "LX Studio",
+    "description": "Fine-art wedding photography and cinematic films in Delhi NCR and worldwide.",
+    "url": "https://kiransaini0910.github.io/LX-STUDIO/",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+917065247585",
+    "email": "hello@lxstudio.in",
+    "areaServed": ["Delhi NCR", "India", "Worldwide"],
+    "address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN" },
+    "sameAs": ["https://www.instagram.com/lxstudio.info?mdxt=MWRuNWd6dXhoNDFhag=="]
+  }
+  </script>
+
+  <!-- Tailwind & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#F8F0E5',
+            dk: '#1C352D',
+            pk: '#F8F0E5',
+            rose: '#F8F0E5',
+            mu: 'rgba(28,53,45,.75)',
+            bd: 'rgba(28,53,45,.25)'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-bg text-dk font-sans antialiased overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#F8F0E5]/80 backdrop-blur-md border-b border-dk/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
+      <a href="#hero" class="leading-tight">
+        <span class="font-serif text-xl tracking-widest uppercase font-semibold">LX Studio</span>
+        <span class="block text-[10px] tracking-[.2em] text-mu uppercase">The Memorable Stories, Delhi</span>
+      </a>
+      <div class="flex items-center gap-3 sm:gap-6">
+        <a href="tel:+917065247585" class="hidden md:inline text-xs tracking-wider hover:underline">+91 70652 47585</a>
+        <a href="https://wa.me/917065247585" target="_blank" rel="noopener" class="hidden sm:inline text-xs tracking-wider hover:underline">WhatsApp</a>
+        <a href="#contact" class="bg-dk text-bg hover:bg-dk/90 transition-all px-4 sm:px-6 py-2 rounded-full text-xs font-medium">Check your date</a>
+        <button id="menuBtn" class="p-2 text-xl md:hidden" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION OVERLAY -->
+  <nav id="menu" class="fixed inset-0 z-[60] bg-dk/95 text-bg flex flex-col justify-center items-center gap-6 text-center hidden">
+    <button id="menuClose" class="absolute top-6 right-6 text-3xl hover:opacity-80" aria-label="Close menu">&times;</button>
+    <a href="#philosophy" class="font-serif text-3xl hover:text-bg/80">Philosophy</a>
+    <a href="#stories" class="font-serif text-3xl hover:text-bg/80">Stories</a>
+    <a href="#cinema" class="font-serif text-3xl hover:text-bg/80">Films</a>
+    <a href="#services" class="font-serif text-3xl hover:text-bg/80">Services</a>
+    <a href="#albums" class="font-serif text-3xl hover:text-bg/80">Albums</a>
+    <a href="#packages" class="font-serif text-3xl hover:text-bg/80">Packages</a>
+    <a href="#about" class="font-serif text-3xl hover:text-bg/80">About Aakash</a>
+    <a href="#contact" class="bg-bg text-dk hover:bg-bg/90 px-8 py-3 rounded-full text-sm font-semibold mt-2">Check your date</a>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-screen flex items-end px-4 sm:px-8 lg:px-16 pt-28 pb-24 overflow-hidden bg-[#1C352D]">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80" alt="Bride and groom heritage palace wedding" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover opacity-45">
+      <div class="absolute inset-0 bg-gradient-to-t from-dk via-dk/40 to-transparent"></div>
+      
+      <div class="relative max-w-3xl text-bg">
+        <p class="text-xs tracking-[.25em] text-bg/80 mb-4 border-l border-pk pl-3 uppercase">Delhi NCR &amp; Destination Weddings Worldwide</p>
+        <h1 class="font-serif text-5xl sm:text-7xl leading-[1.05] mb-6">We Don’t Just Take Pictures. <span class="italic font-light text-bg/90">We Frame Your Legacy.</span></h1>
+        <p class="text-bg/85 font-light max-w-xl leading-relaxed mb-8">Crafting timeless wedding stories in Delhi NCR &amp; worldwide. Unscripted, emotional, and authentic fine-art photography.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#stories" class="border border-bg/40 hover:border-bg px-6 py-3 rounded-full text-sm bg-black/20 backdrop-blur transition-all">See our stories</a>
+          <a href="#contact" class="bg-bg text-dk hover:bg-bg/90 px-7 py-3 rounded-full text-sm font-semibold transition-all">Check your date</a>
+        </div>
+        <p class="mt-10 pt-5 border-t border-bg/20 text-sm text-bg/75">Now booking 2026–2027 celebrations. Limited to 18 weddings a year.</p>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section id="philosophy" class="py-24 px-4 sm:px-8 max-w-5xl mx-auto">
+      <h2 class="font-serif text-4xl sm:text-6xl font-light leading-tight mb-8">Beautiful days pass quickly. <span class="italic text-mu">Good photographs slow them down.</span></h2>
+      <div class="grid md:grid-cols-2 gap-10 font-light leading-relaxed text-dk/80 mb-14">
+        <p>The decor fades, the music stops, and the flowers wilt. What remains forever are the unspoken emotions — the quiet glance before the wedding march, the tight hug from your parents, and the unscripted laughter with your best friends.</p>
+        <p>We work unhurriedly and step lightly. No stiff posing, no staged drama, and no awkward directions — just pure light, genuine connections, and timeless wedding stories.</p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6 pt-8 border-t border-bd">
+        <div><h3 class="font-serif text-2xl mb-1">Documentary Style</h3><p class="text-sm text-mu">Real intimacy over staged photography.</p></div>
+        <div><h3 class="font-serif text-2xl mb-1">Timeless Colors</h3><p class="text-sm text-mu">Natural skin tones and authentic lighting.</p></div>
+        <div><h3 class="font-serif text-2xl mb-1">Calm Experience</h3><p class="text-sm text-mu">A soft-spoken crew so you can enjoy your day.</p></div>
+      </div>
+    </section>
+
+    <!-- STORIES GALLERY SECTION -->
+    <section id="stories" class="py-20 px-4 sm:px-8 bg-bg border-y border-bd">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-serif text-4xl sm:text-5xl mb-3">Selected Stories</h2>
+        <p class="text-sm text-mu max-w-md mb-8">Explore our fine-art wedding showcases filtered by celebration type.</p>
+        <div id="filters" class="flex flex-wrap gap-2 mb-10 pb-6 border-b border-bd"></div>
+        <div id="grid" class="grid md:grid-cols-2 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- MOMENTS SECTION -->
+    <section class="py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+      <h2 class="font-serif text-4xl sm:text-5xl font-light mb-4">The Moments Between The Moments</h2>
+      <p class="text-sm text-dk/70 max-w-2xl mb-12">We look for what others overlook: the breath before the doors open, hands trembling over heirloom jewellery, tears wiped away beside the mandap.</p>
+      <div id="moments" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </section>
+
+    <!-- CINEMA SECTION -->
+    <section id="cinema" class="py-24 px-4 sm:px-8 bg-dk text-bg">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="font-serif text-4xl sm:text-6xl font-light mb-3">Cinematic Films <span class="italic text-bg/80">That Feel Like Movies.</span></h2>
+        <p class="text-sm text-bg/70 max-w-md mb-10">4K high-definition cinema blended with original audio, sacred vows, and heartfelt blessings.</p>
+        <div class="grid lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-2">
+            <div class="relative aspect-video rounded-2xl overflow-hidden bg-black group">
+              <img id="poster" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80" alt="Cinematic film preview" class="w-full h-full object-cover opacity-80 transition-all duration-300 group-hover:scale-105">
+              <button id="play" type="button" aria-label="Play film" class="absolute inset-0 m-auto w-20 h-20 rounded-full bg-bg/90 text-dk text-2xl flex items-center justify-center hover:scale-110 transition-all shadow-xl pl-1">&#9654;</button>
+            </div>
+            <h3 id="chTitle" class="font-serif text-3xl mt-5">Royal Jaipur Celebration</h3>
+            <p id="chSub" class="text-sm text-bg/70">Cinematic Wedding Feature Film</p>
+            <p id="videoNote" class="text-sm text-bg/80 mt-3" aria-live="polite"></p>
+          </div>
+          <div id="chapters" class="grid gap-3 content-start"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 px-4 sm:px-8 max-w-5xl mx-auto">
+      <h2 class="font-serif text-4xl sm:text-5xl font-light mb-12">What We Offer</h2>
+      <div id="serviceList" class="divide-y divide-bd"></div>
+    </section>
+
+    <!-- ALBUMS SECTION -->
+    <section id="albums" class="py-24 px-4 sm:px-8 bg-dk text-bg">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="font-serif text-4xl sm:text-5xl font-light mb-3">Albums Made To Be Held</h2>
+        <p class="text-sm text-bg/70 max-w-md mb-12">Your wedding, printed and handcrafted to last for generations.</p>
+        <div id="albumCards" class="grid md:grid-cols-3 gap-8 mb-16"></div>
+        <ol id="albumSteps" class="grid sm:grid-cols-4 gap-8 pt-10 border-t border-bg/20"></ol>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (SINGLE CLEAN VERSION) -->
+    <section id="about" class="py-24 px-4 sm:px-8 border-t border-bd">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Aakash - Founder & Principal Photographer" class="rounded-3xl aspect-[4/5] object-cover w-full max-w-sm mx-auto shadow-md" loading="lazy">
+        </div>
+        <div class="md:col-span-7">
+          <h2 class="font-serif text-4xl sm:text-5xl font-light leading-tight mb-6">Meet Aakash — The Storyteller</h2>
+          <p class="text-dk/80 leading-relaxed mb-4">Couples describe LX Studio with one word above all: <span class="font-semibold">calm</span>.</p>
+          <p class="text-dk/80 leading-relaxed mb-8">“A wedding day is electric and fast-moving. If your photographer brings chaos, the camera catches it. I aim to be the calmest presence in the room so every photograph reflects genuine, relaxed intimacy.”</p>
+          <ul class="grid sm:grid-cols-3 gap-4 text-sm border-t border-bd pt-6 mb-8">
+            <li><b class="block font-medium">Rooted in Delhi NCR</b><span class="text-mu">Expert knowledge of heritage palaces &amp; royal venues.</span></li>
+            <li><b class="block font-medium">Personally Led</b><span class="text-mu">Every wedding is individually directed &amp; edited by Aakash.</span></li>
+            <li><b class="block font-medium">True Color Aesthetic</b><span class="text-mu">No trendy artificial filters, just timeless skin tones.</span></li>
+          </ul>
+          <a href="https://wa.me/917065247585" target="_blank" rel="noopener" class="bg-dk text-bg hover:bg-dk/90 inline-block px-6 py-3 rounded-full text-sm font-semibold transition-all">Chat with Aakash on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES SECTION -->
+    <section id="packages" class="py-24 px-4 sm:px-8 bg-bg border-y border-bd">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="font-serif text-4xl sm:text-5xl font-light text-center mb-14">Investment &amp; Packages</h2>
+        <div id="pkgs" class="grid md:grid-cols-3 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews" class="py-24 px-4 sm:px-8 max-w-6xl mx-auto">
+      <h2 class="font-serif text-4xl sm:text-5xl font-light text-center mb-12">Words From Our Couples</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <figure class="bg-bg border border-bd rounded-3xl p-8 shadow-sm">
+          <blockquote class="font-serif text-xl leading-relaxed mb-5">“Aakash and his team felt like extended family. They captured moments we didn't even realize were happening!”</blockquote>
+          <figcaption class="text-sm text-mu">Ananya &amp; Dev · Jaipur Palace, 2025</figcaption>
+        </figure>
+        <figure class="bg-bg border border-bd rounded-3xl p-8 shadow-sm">
+          <blockquote class="font-serif text-xl leading-relaxed mb-5">“The photo album quality is breathtaking. Pure fine-art storytelling without any awkward posing.”</blockquote>
+          <figcaption class="text-sm text-mu">Rhea &amp; Kabir · Fairmont Udaipur, 2025</figcaption>
+        </figure>
+        <figure class="bg-bg border border-bd rounded-3xl p-8 shadow-sm">
+          <blockquote class="font-serif text-xl leading-relaxed mb-5">“The calmest crew ever. Our wedding video looks like a feature film. Best decision we made!”</blockquote>
+          <figcaption class="text-sm text-mu">Simran &amp; Rohan · Delhi NCR, 2025</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="py-24 px-4 sm:px-8 bg-dk text-bg">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="font-serif text-4xl sm:text-6xl font-light mb-4">Your Day Deserves <span class="italic text-bg/80">To Be Remembered.</span></h2>
+          <p class="text-sm text-bg/70 max-w-lg mx-auto">Share your date and details. Your message opens directly in WhatsApp for quick availability check.</p>
+        </div>
+        <form id="form" class="bg-bg text-dk rounded-3xl p-6 sm:p-10 space-y-6 shadow-2xl" novalidate>
+          <p class="text-xs text-mu font-semibold tracking-wider uppercase">Step <span id="stepNum">1</span> of 3</p>
+
+          <div data-step="1" class="space-y-5">
+            <h3 class="font-serif text-3xl">When and where is your wedding?</h3>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <label class="text-xs text-mu font-medium block">Wedding date *
+                <input type="date" id="fDate" required class="mt-2 w-full bg-bg border border-bd rounded-xl p-3 text-sm text-dk focus:outline-none focus:border-dk">
+              </label>
+              <label class="text-xs text-mu font-medium block">City / Region *
+                <select id="fCity" class="mt-2 w-full bg-bg border border-bd rounded-xl p-3 text-sm text-dk focus:outline-none focus:border-dk">
+                  <option>Delhi NCR</option>
+                  <option>Jaipur / Udaipur / Rajasthan</option>
+                  <option>Goa / Coastal</option>
+                  <option>International Destination</option>
+                  <option>Other India Location</option>
+                </select>
+              </label>
+            </div>
+            <label class="text-xs text-mu font-medium block">Venue name (if decided)
+              <input type="text" id="fVenue" placeholder="e.g. ITC Grand Bharat, Farm Estate" class="mt-2 w-full bg-bg border border-bd rounded-xl p-3 text-sm text-dk focus:outline-none focus:border-dk">
+            </label>
+          </div>
+
+          <div data-step="2" class="space-y-5 hidden">
+            <h3 class="font-serif text-3xl">Who is getting married?</h3>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <label class="text-xs text-mu font-medium block">Couple names *
+                <input type="text" id="fNames" placeholder="e.g. Ananya &amp; Dev" class="mt-2 w-full bg-bg border border-bd rounded-xl p-3 text-sm text-dk focus:outline-none focus:border-dk">
+              </label>
+              <label class="text-xs text-mu font-medium block">Phone / WhatsApp *
+                <input type="tel" id="fPhone" placeholder="+91 98765 43210" class="mt-2 w-full bg-bg border border-bd rounded-xl p-3 text-sm text-dk focus:outline-none focus:border-dk">
+              </label>
+            </div>
+          </div>
+
+          <div data-step="3" class="space-y-5 hidden">
+            <h3 class="font-serif text-3xl">Anything we should know?</h3>
+            <label class="text-xs text-mu font-medium block">Your vision or questions
+              <textarea id="fNotes" rows="4" placeholder="Events, camera style preferences, budget, or questions..." class="mt-2 w-full bg-bg border border-bd rounded-xl p-3 text-sm text-dk focus:outline-none focus:border-dk"></textarea>
+            </label>
+          </div>
+
+          <p id="formErr" class="text-sm text-red-600 font-semibold min-h-[1.25rem]" role="alert"></p>
+          <div class="flex items-center justify-between pt-4 border-t border-bd">
+            <button type="button" id="back" class="text-sm text-mu hover:text-dk invisible transition-all">&larr; Back</button>
+            <button type="button" id="next" class="bg-dk text-bg hover:bg-dk/90 px-8 py-3 rounded-full text-sm font-semibold transition-all">Next</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dk text-bg border-t border-bg/20 pt-20 pb-32 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-serif text-5xl sm:text-7xl font-light text-center mb-16">See you at the <span class="italic text-bg/80">altar.</span></h2>
+      <div class="grid md:grid-cols-3 gap-10 pt-10 border-t border-bg/10 text-sm">
+        <div>
+          <p class="font-serif text-2xl tracking-widest mb-2 uppercase font-medium">LX STUDIO</p>
+          <p class="text-bg/60 font-light max-w-xs">Wedding photography and films studio in Delhi NCR, available worldwide.</p>
+        </div>
+        <ul class="space-y-2 text-bg/70">
+          <li><a class="hover:text-bg transition-colors" href="#stories">Stories</a></li>
+          <li><a class="hover:text-bg transition-colors" href="#cinema">Films</a></li>
+          <li><a class="hover:text-bg transition-colors" href="#services">Services</a></li>
+          <li><a class="hover:text-bg transition-colors" href="#albums">Albums</a></li>
+          <li><a class="hover:text-bg transition-colors" href="#about">About</a></li>
+          <li><a class="hover:text-bg transition-colors" href="#contact">Check Availability</a></li>
+        </ul>
+        <ul class="space-y-2 text-bg/70">
+          <li><a class="hover:text-bg transition-colors" href="mailto:hello@lxstudio.in">hello@lxstudio.in</a></li>
+          <li><a class="hover:text-bg transition-colors" href="tel:+917065247585">+91 70652 47585</a></li>
+          <li><a class="hover:text-bg transition-colors" href="https://www.instagram.com/lxstudio.info?mdxt=MWRuNWd6dXhoNDFhag==" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <p class="mt-14 pt-6 border-t border-bg/10 text-xs text-bg/40">&copy; 2026 LX Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTION BAR -->
+  <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-lg rounded-full p-2 flex items-center gap-2 bg-dk/95 backdrop-blur border border-bg/20 shadow-2xl">
+    <a href="#contact" class="bg-bg text-dk hover:bg-bg/90 flex-1 text-center py-2.5 rounded-full text-sm font-semibold transition-all">Check your date</a>
+    <a href="https://wa.me/917065247585" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="w-11 h-11 rounded-full bg-bg text-dk flex items-center justify-center text-xs font-bold hover:scale-105 transition-all">WA</a>
+  </div>
+
+  <!-- GALLERY LIGHTBOX MODAL -->
+  <div id="modal" class="fixed inset-0 z-[90] bg-dk/95 flex items-center justify-center p-4 hidden" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="relative max-w-4xl w-full bg-dk border border-bg/20 text-bg rounded-3xl p-6 sm:p-8 shadow-2xl">
+      <button id="mClose" class="absolute top-4 right-5 text-3xl text-bg/70 hover:text-bg transition-all" aria-label="Close gallery">&times;</button>
+      <h3 id="mTitle" class="font-serif text-3xl mb-6"></h3>
+      <div id="mGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-4 max-h-[60vh] overflow-y-auto pr-2"></div>
+      <div class="mt-6 text-right">
+        <a href="#contact" id="mCta" class="bg-bg text-dk hover:bg-bg/90 inline-block px-6 py-2 rounded-full text-sm font-semibold transition-all">Inquire about this style</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

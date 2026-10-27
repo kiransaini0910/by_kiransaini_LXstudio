@@ -1,0 +1,53 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.glass {
+  background: rgba(248, 240, 229, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.btn {
+  background: #1C352D;
+  color: #F8F0E5;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.btn-l {
+  background: #F8F0E5;
+  color: #1C352D;
+  transition: 0.3s;
+}
+
+.btn-l:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+::selection {
+  background: #1C352D;
+  color: #F8F0E5;
+}
+
+:focus-visible {
+  outline: 2px solid #1C352D;
+  outline-offset: 2px;
+}
+
+.hidden-step {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
